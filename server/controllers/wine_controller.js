@@ -11,7 +11,7 @@ module.exports = {
         const dbInstance = req.app.get('db');
         
         const { wine, vintage, gws, ci, nbj, country_id, entry_status_id } = req.body;
-        
+        console.log("REQ.BODY:",req.body);
         return dbInstance.create_wine_entry({ wine, vintage, gws, ci, nbj, country_id, entry_status_id })
             .then(createdWineEntry => {
                 res.status(201).json({success: true}); //Success is not required, return a 201 status code indicating a record has been created.
@@ -20,7 +20,8 @@ module.exports = {
     },
     updateWineEntry: (req, res) => {
         const dbInstance = req.app.get('db');
-        const { id, wine, vintage, gws, ci, nbj, country_id, entry_status_id } = req.body;
+        const { id } = req.params;
+        const { wine, vintage, gws, ci, nbj, country_id, entry_status_id } = req.body;
         
         /*
             ** Success is not required, return a 204 status code indicating a record has been updated, therefore return no content. 
@@ -41,7 +42,7 @@ module.exports = {
         /*
             ** Success is not required, return a 204 status code indicating a record has been deleted, therefore return no content. 
         */
-        return dbInstance.delete_wine_entry({ id } )
+        return dbInstance.delete_wine_entry({ id })
             .then(deletedWineEntry => {
                 res.status(204).json({success: true}); 
             })

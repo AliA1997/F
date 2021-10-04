@@ -11,37 +11,11 @@ INSERT INTO wine_scores(
     )
 VALUES (
         1,
-        'Domaine De La Romanee Conti,
-           Romanee Conti Grand Cru' 2005,
+        'Domaine De La Romanee Conti,Romanee Conti Grand Cru',
+         2005,
         100,
         'A+',
         4,
-        (
-            select id
-            from lk_countries
-            where name = 'France'
-        ),
-        current_timestamp
-    );
-INSERT INTO wine_scores(
-        id,
-        wine,
-        vintage,
-        gws,
-        ci,
-        nbj,
-,
-        country_id,
-        date_created
-    ),
-    VALUES (
-        2,
-        'Domaine Du Comte Liger Belair,
-           Monopole, La Romanee Grand Cru',
-        1911,
-        100,
-        'A',
-        3,
         (
             select id
             from lk_countries
@@ -85,8 +59,7 @@ INSERT INTO wine_scores(
     )
 VALUES (
         4,
-        'Leroy Domaine D''Auvenay,
- Blanc, Chevalier Montrachet Grand Cru',
+        'Leroy Domaine D''Auvenay, Blanc, Chevalier Montrachet Grand Cru',
         2002,
         100,
         'A+',
@@ -228,8 +201,7 @@ VALUES (
         1999,
         100,
         'A+',
-        3
-    ),
+        3,
 (
     select id
     from lk_countries
@@ -469,8 +441,7 @@ VALUES (
         2015,
         99.76,
         'B+',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -494,8 +465,7 @@ VALUES (
         2015,
         99.75,
         'A',
-        6
-    );
+        6,
 (
     select id
     from lk_countries
@@ -519,8 +489,7 @@ VALUES (
         2009,
         99.71,
         'A+',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -544,8 +513,7 @@ VALUES (
         1961,
         99.7,
         'A+',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -569,8 +537,7 @@ VALUES (
         1990,
         99.7,
         'A',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -594,8 +561,7 @@ VALUES (
         2015,
         99.66,
         'A+',
-        6
-    );
+        6,
 (
     select id
     from lk_countries
@@ -619,8 +585,7 @@ VALUES (
         2014,
         99.65,
         'C+',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -644,8 +609,7 @@ VALUES (
         1989,
         99.64,
         'A+',
-        11
-    );
+        11,
 (
     select id
     from lk_countries
@@ -669,8 +633,7 @@ VALUES (
         2012,
         99.63,
         'A+',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -694,8 +657,7 @@ VALUES (
         2008,
         99.63,
         'B+',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -719,8 +681,7 @@ VALUES (
         1996,
         99.62,
         'B',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -762,8 +723,7 @@ VALUES (
         2012,
         99.59,
         'A+',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -787,8 +747,7 @@ VALUES (
         2012,
         99.59,
         'A+',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -812,8 +771,7 @@ VALUES (
         2016,
         99.57,
         'A+',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -837,8 +795,7 @@ VALUES (
         2015,
         99.55,
         'A+',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -862,8 +819,7 @@ VALUES (
         2016,
         99.52,
         'A+',
-        6
-    );
+        6,
 (
     select id
     from lk_countries
@@ -887,8 +843,7 @@ VALUES (
         2010,
         99.52,
         'B+',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -930,8 +885,7 @@ VALUES (
         1945,
         99.49,
         'B',
-        6
-    );
+        6,
 (
     select id
     from lk_countries
@@ -955,8 +909,7 @@ VALUES (
         2015,
         99.48,
         'A',
-        6
-    );
+        6,
 (
     select id
     from lk_countries
@@ -980,8 +933,7 @@ VALUES (
         2002,
         99.45,
         'B+',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -1005,8 +957,7 @@ VALUES (
         2009,
         99.45,
         'A',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -1030,8 +981,7 @@ VALUES (
         2006,
         99.41,
         'A+',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -1055,8 +1005,7 @@ VALUES (
         1990,
         99.41,
         'B',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -1116,8 +1065,7 @@ VALUES (
         2005,
         99.38,
         'A',
-        3
-    );
+        3,
 (
     select id
     from lk_countries
@@ -1141,8 +1089,7 @@ VALUES (
         2010,
         99.38,
         'B',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -1166,8 +1113,7 @@ VALUES (
         2008,
         99.38,
         'A',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -1191,8 +1137,7 @@ VALUES (
         1955,
         99.37,
         'A+',
-        4
-    );
+        4,
 (
     select id
     from lk_countries
@@ -1216,8 +1161,7 @@ VALUES (
         2008,
         99.35,
         'B',
-        5
-    );
+        5,
 (
     select id
     from lk_countries
@@ -1241,8 +1185,7 @@ VALUES (
         1959,
         99.33,
         'A',
-        4
-    );
+        4,
 (
     select id
     from lk_countries

@@ -1,4 +1,4 @@
-insert into wine_entry
+insert into wine_entries
 (
     wine,
     vintage,
@@ -7,7 +7,8 @@ insert into wine_entry
     nbj,
     country_id,
     entry_status_id,
-     'Needs Expert Approval' -- This is meaningless. All wine entries when approved will not require expert approval, but display it to not con usersl
+    approved_by_expert, -- This is meaningless. All wine entries when approved will not require expert approval, but display it to not con users
+    date_created
 )
 values
-( ${wine}, ${vintage}, ${gws}, ${ci}, ${nbj}, ${country_id}, ${entry_status_id}, 'Needs Expert Approval');
+( ${wine}, ${vintage}, ${gws}, ${ci}, ${nbj}, ${country_id}, ${entry_status_id}, 'Needs Expert Approval', current_timestamp);

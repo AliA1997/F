@@ -41,7 +41,8 @@ CREATE TABLE IF NOT EXISTS wine_entries(
   ci      VARCHAR(3) NOT NULL, -- idk
   nbj     INTEGER  NOT NULL, -- idk
   country_id INTEGER REFERENCES lk_countries (id) not null, -- Country id that references the lk_countries table.
-  entry_status_id INTEGER REFERENCES lk_wine_entry_statuses (id) not null -- Wine entry status id that references the lk_wine_entry_statuses table.
+  entry_status_id INTEGER REFERENCES lk_wine_entry_statuses (id) not null, -- Wine entry status id that references the lk_wine_entry_statuses table.
+  approved_by_expert VARCHAR(200),
   date_created TIMESTAMP null, -- The date the score was created.
   date_updated TIMESTAMP null, -- The date the score was updated.
   deleted_ind boolean -- The date the score was soft-deleted, still exists in database.

@@ -43,7 +43,7 @@ const Form = ({ initialValues, inputArr, submitButtonText }) => {
                                     <Field 
                                         component="select"
                                         id={uuidV4()}
-                                        name={input.name}
+                                        name={inputEl.name}
                                         multiple={false}
                                     >
                                         {inputEl.options.map(opt => <option key={opt.id} value={opt.value}>{opt.label}</option>)}
@@ -66,3 +66,5 @@ const Form = ({ initialValues, inputArr, submitButtonText }) => {
         </Formik>
     );
 }
+
+export default Form;
